@@ -1,0 +1,36 @@
+name: gradproject
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  file_picker: ^8.3.2
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  http: ^1.2.2
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  fonts:
+    - family: Satisfy
+      fonts:
+        - asset: assets/fonts/Satisfy-Regular.ttf
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf
+        
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+

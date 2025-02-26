@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gradproject/feature/home/prasntation/screen/card.dart';
+
 import 'package:gradproject/feature/home/prasntation/screen/cart_screen.dart';
 import 'package:gradproject/feature/home/prasntation/screen/home_screen.dart';
 import 'package:gradproject/feature/home/prasntation/screen/houses_screen.dart';
@@ -34,7 +34,6 @@ class _NavbarState extends State<Navbar> {
             icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
-       
           NavigationDestination(
             selectedIcon: Icon(Icons.search),
             icon: Icon(Icons.search_off_outlined),
@@ -54,12 +53,10 @@ class _NavbarState extends State<Navbar> {
       ),
       body: <Widget>[
         const HomeScreen(),
-      
-        const SearchScreen(), 
-        const CartScreen() ,
-        const ProfileScreen()][currentpage],
+        const SearchScreen(),
+        const CartScreen(),
+        const ProfileScreen()
+      ][currentpage],
     );
   }
 }
-
-  
